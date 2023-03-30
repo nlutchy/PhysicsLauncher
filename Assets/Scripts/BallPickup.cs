@@ -11,6 +11,8 @@ public class BallPickup : MonoBehaviour
     private bool ObjHeld;
 
     Vector3 CameraDir;
+
+    GameObject BallPos;
     
     void Start()
     {
@@ -20,10 +22,10 @@ public class BallPickup : MonoBehaviour
     
     void Update()
     {
-              
+        BallPos = GameObject.FindWithTag("Hold");       
         if (ObjHeld == true)
       {
-            gameObject.transform.position = Camera.main.transform.position;
+            gameObject.transform.position = BallPos.transform.position;
       }
     }
 

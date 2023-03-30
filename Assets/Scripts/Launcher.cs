@@ -10,16 +10,6 @@ public class Launcher : MonoBehaviour
         ButtonMat = GetComponent<Renderer>().material;
     }
 
-    public void OnTriggerEnter(Collider other)
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-
     private void OnMouseOver()
     {
         ButtonMat.color = Color.red;
@@ -28,5 +18,10 @@ public class Launcher : MonoBehaviour
     private void OnMouseExit()
     {
         ButtonMat.color = Color.white;
+    }
+
+    private void OnMouseDown()
+    {
+        
     }
 }
