@@ -2,24 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallSpawner : MonoBehaviour
+public class Launcher : MonoBehaviour
 {
-   
-    public GameObject BallSpawnPos;
-    public GameObject Ball;
-
     Material ButtonMat;
-
     void Start()
     {
         ButtonMat = GetComponent<Renderer>().material;
     }
-    
-    private void OnMouseDown()
+
+    public void OnTriggerEnter(Collider other)
     {
-        Instantiate(Ball, BallSpawnPos.transform);
+        
     }
 
+    void Update()
+    {
+        
+    }
 
     private void OnMouseOver()
     {
@@ -30,6 +29,4 @@ public class BallSpawner : MonoBehaviour
     {
         ButtonMat.color = Color.white;
     }
-
-
 }
