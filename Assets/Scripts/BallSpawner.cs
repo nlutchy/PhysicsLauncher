@@ -5,30 +5,30 @@ using UnityEngine;
 public class BallSpawner : MonoBehaviour
 {
    
-    public GameObject BallSpawnPos;
+    public GameObject ballSpawnPos;
     public GameObject Ball;
 
-    Material ButtonMat;
+    Material buttonMat;
 
     void Start()
     {   //Locates the material for this object
-        ButtonMat = GetComponent<Renderer>().material;
+        buttonMat = GetComponent<Renderer>().material;
     }
     
     private void OnMouseDown()
     {   //Spawns the ball at selected location
-        Instantiate(Ball, BallSpawnPos.transform);
+        Instantiate(Ball, ballSpawnPos.transform);
     }
 
 
     private void OnMouseOver()
     {   //Changes the colour of the material to red
-        ButtonMat.color = Color.red;
+        buttonMat.color = Color.red;
     }
 
     private void OnMouseExit()
     {   //Changes the colour of the material to white
-        ButtonMat.color = Color.white;
+        buttonMat.color = Color.white;
     }
 
 
