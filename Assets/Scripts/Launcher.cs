@@ -5,8 +5,8 @@ using UnityEngine;
 public class Launcher : MonoBehaviour
 {
     Material buttonMat;
-    bool buttonDown false;
-    public int Force 100;
+    bool buttonDown = false;
+    public int Force = 100;
  
     void Start()
     {   //Gets the material of this object

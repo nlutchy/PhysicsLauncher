@@ -8,7 +8,7 @@ public class BallPickup : MonoBehaviour
 
     Material ballMat;
     
-    private bool objHeld false;
+    private bool objHeld = false;
 
     GameObject ballPos;
     
